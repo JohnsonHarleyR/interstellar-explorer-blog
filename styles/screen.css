@@ -7,11 +7,12 @@
     --lightJam: #b542bd;
     --jam: #4c1e3c;
     --dark: #21242b;
-
+    --top-bottom-margin: 45px;
+    --font-size: 25px;
 }
 
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: Helvetica, Tahoma, sans-serif;
     color: var(--lightSand);
     background: var(--dark);
     padding: 0 40px;
@@ -48,7 +49,7 @@ nav ul li a {
 h1 {
     font-size: 7em;
     letter-spacing: -2px;
-    margin-bottom: 25px;
+    margin-bottom: var(--top-bottom-margin);
 }
 
 h1 strong {
@@ -58,8 +59,45 @@ h1 strong {
     -webkit-text-fill-color: transparent;
 }
 
+h2 {
+    font-size: 3.75em;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+}
 
-.logo,
-img.about {
+p {
+    font-size: var(--font-size);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: var(--lightJam);
+    font-size: var(--font-size);
+}
+
+a:visited {
+    color: var(--lightPlum);
+}
+
+.author {
+    margin-top: 10px;
+}
+
+.post-date {
+    margin-bottom: 20px;
+}
+
+.logo {
+    opacity: 0.5;
+    width: 65px;
+    margin-top: var(--top-bottom-margin);
+}
+
+.copyright {
+    margin-top: -5px;
+    font-size: 20px;
     opacity: 0.5;
 }
