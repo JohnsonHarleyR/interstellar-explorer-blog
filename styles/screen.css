@@ -1,7 +1,19 @@
+:root {
+    --lightSand: #dfdcdc;
+    --sand: #c6bbb9;
+    --lightPlum: #7a748c;
+    --plum: #423855;
+    --darkPlum: #1c1026;
+    --lightJam: #b542bd;
+    --jam: #4c1e3c;
+    --dark: #21242b;
+
+}
+
 body {
     font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
+    color: var(--lightSand);
+    background: var(--dark);
     padding: 0 40px;
     text-align: center;
 }
@@ -10,7 +22,7 @@ nav {
     margin: 40px auto 0 auto;
     width: 250px;
     border-radius: 50px;
-    background: #212431;
+    background: var(--plum);
 }
 
 nav ul {
@@ -28,23 +40,26 @@ nav ul li {
 nav ul li a {
     display: inline-block;
     padding: 20px;
-    color: #EAE8FF;
+    color: var(--lightSand);
     text-decoration: none;
     font-size: 1.2em;
 }
 
 h1 {
-    font-size: 8em;
+    font-size: 7em;
     letter-spacing: -2px;
+    margin-bottom: 25px;
 }
 
 h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: var(--sand);
+    background: linear-gradient(45deg, var(--lightPlum) 0%, var(--lightJam) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+
+.logo,
 img.about {
     opacity: 0.5;
 }
